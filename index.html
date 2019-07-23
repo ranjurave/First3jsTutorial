@@ -21,8 +21,7 @@
 
 			function init() 
 			{
-
-    		camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
+			camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
     		camera.position.z = 1;
 
     		scene = new THREE.Scene();
@@ -36,19 +35,14 @@
     		renderer = new THREE.WebGLRenderer( { antialias: true } );
     		renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
     		document.body.appendChild( renderer.domElement );
-
 			}
 
 			function animate() 
 			{
-
-    		requestAnimationFrame( animate );
-
-    		mesh.rotation.x += 0.01;
+			requestAnimationFrame( animate );
+			mesh.rotation.x += 0.01;
     		mesh.rotation.y += 0.02;
-
-    		renderer.render( scene, camera );
-
+			renderer.render( scene, camera );
 			}
 			
 		</script>
